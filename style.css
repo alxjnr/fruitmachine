@@ -1,0 +1,373 @@
+.wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    
+    max-width: 960px;
+
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+body {
+
+    background: rgb(179, 179, 192);
+
+    
+    text-align: center;
+    margin: auto;
+}
+
+.backBox {
+    background-color: #2d92b9; 
+    border: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 1000px;
+    height: 700px;
+    border-radius: 2%;
+    position: relative;
+    left: 0%;
+    top: -600px;  
+    z-index: 1;
+}
+
+.leftLaneBox {
+    background-color: #69b5d8;
+    object-fit: inherit;
+    border: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 300px;
+    height: 600px;
+    border-radius: 2%;
+    position: absolute;
+    left: 5%;
+    top: 50px;  
+    z-index: 0;
+    overflow: hidden;
+}
+
+.leftLaneBoxImage {
+
+    background-image: url("images/machineRoll.jpg");
+    background-repeat: repeat;
+    background-color: #69b5d8;
+    object-fit: inherit;
+    border: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 300px;
+    height: 50000px;
+    border-radius: 2%;
+    position: absolute;
+    left: 0%;
+    top: -18000px;  
+    z-index: 0;
+}
+
+.midLaneBox {
+    background-color: #69b5d8;
+    object-fit: inherit;
+    background-repeat: no-repeat;
+    border: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 300px;
+    height: 600px;
+    border-radius: 2%;
+    position: absolute;
+    left: 36%;
+    top: 50px;  
+    z-index: 0;
+    overflow: hidden;
+}
+
+.midLaneBoxImage {
+
+    background-image: url("images/machineRoll.jpg");
+    background-repeat: repeat;
+    background-color: #69b5d8;
+    object-fit: inherit;
+    border: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 300px;
+    height: 50000px;
+    border-radius: 2%;
+    position: absolute;
+    left: 0%;
+    top: -18000px;  
+    z-index: 0;
+}
+
+.rightLaneBox {
+    background-color: #69b5d8;
+    object-fit: inherit;
+    background-repeat: no-repeat;
+    border: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 300px;
+    height: 600px;
+    border-radius: 2%;
+    position: absolute;
+    left: 67%;
+    top: 50px;  
+    z-index: 0;
+    overflow: hidden;
+}
+
+.rightLaneBoxImage {
+
+    background-image: url("images/machineRoll.jpg");
+    background-repeat: repeat;
+    background-color: #69b5d8;
+    object-fit: inherit;
+    border: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 300px;
+    height: 50000px;
+    border-radius: 2%;
+    position: absolute;
+    left: 0%;
+    top: -18000px;  
+    z-index: 0;
+}
+
+.spinButton {
+    background-color: rgb(142, 178, 226); /* Blue background */
+    background-image: url("images/spinBtn.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none; /* Remove borders */
+    border-radius: 50%;
+    color: white; /* White text */
+    padding: 12px 16px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+    position: absolute;
+    left: 13%;
+    top: 50px;
+    z-index: 2;
+    width: 75px;
+    height: 75px;
+}
+
+.spinButton:active {
+    background-color: #2b3966;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    transform: translateY(2px);
+}
+
+.betUpButton {
+    background-color: rgb(142, 178, 226); /* Blue background */
+    background-image: url("images/betUpBtn.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 12px 16px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+    position: absolute;
+    left: 13%;
+    top: 200px;
+    z-index: 2;
+    width: 75px;
+    height: 75px;
+}
+
+.betUpButton:active {
+    background-color: #2b3966;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    transform: translateY(2px);
+}
+
+.betDownButton {
+    background-color: rgb(142, 178, 226); /* Blue background */
+    background-image: url("images/betDownBtn.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 12px 16px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+    position: absolute;
+    left: 13%;
+    top: 300px;
+    z-index: 2;
+    width: 75px;
+    height: 75px;
+}
+
+.betDownButton:active {
+    background-color: #2b3966;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    transform: translateY(2px);
+}
+
+.maxBetButton {
+    background-color: rgb(142, 178, 226); /* Blue background */
+    background-image: url("images/betMaxBtn.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 12px 16px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+    position: absolute;
+    left: 25%;
+    top: 500px;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+}
+
+.maxBetButton:active {
+    background-color: #2b3966;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    transform: translateY(2px);
+}
+
+.betResetButton {
+    background-color: rgb(142, 178, 226); /* Blue background */
+    background-image: url("images/betResetBtn.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 12px 16px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+    position: absolute;
+    left: 25%;
+    top: 570px;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+}
+
+.betResetButton:active {
+    background-color: #2b3966;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    transform: translateY(2px);
+}
+
+.topBox {
+    background-color: #4b96b4; 
+    border: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 1000px;
+    height: 100px;
+    border-radius: 20px 20px;
+    position: relative;
+    left: 0%;
+    top: 70px;  
+    z-index: 0;
+}
+
+.youWinText {
+    width: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 40px 40px;
+    left: 0%;
+    top: 100px;
+    text-align: center;
+}
+
+.pointVal {
+    width: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 40px 40px;
+    left: 0%;
+    top: 100px;
+    text-align: center;
+}
+
+.youLoseText {
+    width: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 40px 40px;
+    left: 0%;
+    top: 100px;
+    text-align: center;
+}
+
+.currentBet {
+    width: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 40px 40px;
+    left: 0%;
+    top: 100px;
+    text-align: center;
+}
+
+.testText {
+    background-color: #2d91b900; 
+    border: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 1000px;
+    height: 100px;
+    border-radius: 40px 40px;
+    position: relative;
+    left: 0%;
+    top: 20px;  
+    z-index: 0;
+    text-align: center;
+}
+
+.rightBox {
+    background-color: #2d92b9; 
+    border: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 100px;
+    height: 700px;
+    border-radius: 20px 20px;
+    position: relative;
+    left: -58%;
+    top: 105px;  
+    z-index: 0;
+}
