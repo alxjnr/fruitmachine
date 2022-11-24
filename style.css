@@ -18,7 +18,7 @@ body {
 }
 
 .containerL {
-    background-color: #0d2c3800; 
+    background-color: #0d2c387c; 
     border: none;
     color: rgb(0, 0, 0);
     text-align: center;
@@ -30,7 +30,7 @@ body {
     position: relative;
     left: -20%;
     top: 50px;  
-    z-index: 1;
+    z-index: 0;
 }
 
 .backBox {
@@ -320,6 +320,7 @@ body {
     left: 0%;
     top: 100px;
     text-align: center;
+    font-weight: bold;
 }
 
 .pointVal {
@@ -331,6 +332,7 @@ body {
     left: 0%;
     top: 100px;
     text-align: center;
+    font-weight: bold;
 }
 
 .youLoseText {
@@ -342,6 +344,7 @@ body {
     left: 0%;
     top: 100px;
     text-align: center;
+    font-weight: bold;
 }
 
 .currentBet {
@@ -353,6 +356,7 @@ body {
     left: 0%;
     top: 100px;
     text-align: center;
+    font-weight: bold;
 }
 
 .testText {
