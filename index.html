@@ -9,6 +9,12 @@
         <script type="text/javascript" src="scripts.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <audio id="audio" autoplay loop src="music/fruitDream.mp3"></audio>
+        <audio id="spin" src="sfx/wheelSpin1.mp3"></audio>
+        <audio id="spinButtonClick" src="sfx/spinClick.mp3"></audio>
+        <audio id="generalButtonClick" src="sfx/generalButtonClick.mp3"></audio>
+        <audio id="loseSound" src="sfx/loseSound.mp3"></audio>
+        <audio id="matchSound" src="sfx/matchSound.mp3"></audio>
+        <audio id="jackpotSound" src="sfx/jackpotSound.mp3"></audio>
     </head>
     <body>
         <div class="wrapper">
@@ -36,11 +42,11 @@
                     </div>
                 </div>
                 <div class="rightBox">
-                    <button class="spinButton" id="spinButton" onclick="machineSpinLeft();machineSpinMiddle();machineSpinRight();spinValueTimer();pointValueTimer();spinDisable();basePointValue();inputReset();backgroundMusic();spinSound();"></button>
-                    <button class="betUpButton" id="betUpButton" onclick="betUp();"></button>
-                    <button class="betDownButton" id="betDownButton" onclick="betDown();"></button>
-                    <button class="betResetButton" id="betResetButton" onclick="betReset();"></button>
-                    <button class="maxBetButton" id="maxBetButton" onclick="maxBet();"></button>
+                    <button class="spinButton" id="spinButton" onclick="machineSpinLeft();machineSpinMiddle();machineSpinRight();spinValueTimer();pointValueTimer();spinDisable();basePointValue();inputReset();backgroundMusic();spinSound();spinButtonClick();"></button>
+                    <button class="betUpButton" id="betUpButton" onclick="betUp();generalButtonClick();"></button>
+                    <button class="betDownButton" id="betDownButton" onclick="betDown();generalButtonClick();"></button>
+                    <button class="betResetButton" id="betResetButton" onclick="betReset();generalButtonClick();"></button>
+                    <button class="maxBetButton" id="maxBetButton" onclick="maxBet();"generalButtonClick();></button>
                 </div>
                 <div class="betLabelBox">
                     <div class="betAmountLabel">
