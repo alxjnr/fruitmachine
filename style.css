@@ -4,8 +4,8 @@
     
     max-width: 960px;
 
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 25%;
+    padding-left: 25%;
 }
 
 body {
@@ -18,7 +18,7 @@ body {
 }
 
 .containerL {
-    background-color: #0d2c387c; 
+    background-color: #0d2c3800; 
     border: none;
     color: rgb(0, 0, 0);
     text-align: center;
@@ -28,7 +28,7 @@ body {
     height: 900px;
     border-radius: 2%;
     position: relative;
-    left: -20%;
+    left: -25%;
     top: 50px;  
     z-index: 0;
 }
