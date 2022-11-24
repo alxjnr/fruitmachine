@@ -53,7 +53,7 @@ body {
 
 .leftLaneBoxImage {
 
-    background-image: url("images/machineRoll.jpg");
+    background-image: url("images/machineRoll2.jpg");
     background-repeat: repeat;
     background-color: #69b5d8;
     object-fit: inherit;
@@ -63,11 +63,11 @@ body {
     text-decoration: none;
     display: inline-block;
     width: 300px;
-    height: 50000px;
+    height: 70000px;
     border-radius: 2%;
     position: absolute;
     left: 0%;
-    top: -18000px;  
+    top: -50000px;  
     z-index: 0;
 }
 
@@ -92,7 +92,7 @@ body {
 
 .midLaneBoxImage {
 
-    background-image: url("images/machineRoll.jpg");
+    background-image: url("images/machineRoll2.jpg");
     background-repeat: repeat;
     background-color: #69b5d8;
     object-fit: inherit;
@@ -102,11 +102,11 @@ body {
     text-decoration: none;
     display: inline-block;
     width: 300px;
-    height: 50000px;
+    height: 70000px;
     border-radius: 2%;
     position: absolute;
     left: 0%;
-    top: -18000px;  
+    top: -50000px;  
     z-index: 0;
 }
 
@@ -131,7 +131,7 @@ body {
 
 .rightLaneBoxImage {
 
-    background-image: url("images/machineRoll.jpg");
+    background-image: url("images/machineRoll2.jpg");
     background-repeat: repeat;
     background-color: #69b5d8;
     object-fit: inherit;
@@ -141,11 +141,11 @@ body {
     text-decoration: none;
     display: inline-block;
     width: 300px;
-    height: 50000px;
+    height: 70000px;
     border-radius: 2%;
     position: absolute;
     left: 0%;
-    top: -18000px;  
+    top: -50000px;
     z-index: 0;
 }
 
