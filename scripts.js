@@ -14,9 +14,9 @@ let spinSound1 = new Audio("music/test2.mp3");
 
 function machineSpinLeft(){
 
-    let rAmount = Math.floor(Math.random() * (8000 - 1000) + 1000);   // may cause issues, 0 no longer a valid case making "Coconut" less likely to appear
+    let rAmount = Math.floor(Math.random() * (24000 - 1000) + 1000);   // may cause issues, 0 no longer a valid case making "Coconut" less likely to appear
     let rAmoundRounded = Math.round(rAmount/1000)*1000;
-    let rDuration = Math.floor(Math.random() * 8000);
+    let rDuration = Math.floor(Math.random() * 24000);
     
     leftVal = rAmoundRounded;
 
@@ -33,9 +33,9 @@ function machineSpinLeft(){
 
 function machineSpinMiddle(){
 
-    let rAmount = Math.floor(Math.random() * (8000 - 1000) + 1000);
+    let rAmount = Math.floor(Math.random() * (24000 - 1000) + 1000);
     let rAmoundRounded = Math.round(rAmount/1000)*1000;
-    let rDuration = Math.floor(Math.random() * 8000);
+    let rDuration = Math.floor(Math.random() * 24000);
 
     midVal = rAmoundRounded
 
@@ -54,9 +54,9 @@ function machineSpinMiddle(){
 
 function machineSpinRight(){
 
-    let rAmount = Math.floor(Math.random() * (8000 - 1000) + 1000);
+    let rAmount = Math.floor(Math.random() * (24000 - 1000) + 1000);
     let rAmoundRounded = Math.round(rAmount/1000)*1000;
-    let rDuration = Math.floor(Math.random() * 8000);
+    let rDuration = Math.floor(Math.random() * 24000);
 
     rightVal = rAmoundRounded;
 
@@ -78,68 +78,105 @@ function spinValues(){
   valueR = rightVal;
 
   switch (valueL){
-    case 0:
-    case 3000:
+    case 2000:
     case 6000:
-      //document.getElementById("spinTextLeft").value = "Coconut";
+    case 10000:
+    case 14000:
+    case 18000:
+    case 22000:
       tValueL = "Coconut";
       break;
-    case 1000:
     case 4000:
-    case 7000:
-      //document.getElementById("spinTextLeft").value = "Banana";
+    case 8000:
+    case 12000:
+    case 16000:
+    case 20000:
+    case 24000:
       tValueL = "Banana";
       break;
-    case 2000:
+    case 1000:
     case 5000:
-    case 8000:
-      //document.getElementById("spinTextLeft").value = "Pineapple";
+    case 9000:
+    case 13000:
+    case 17000:
+    case 21000:
       tValueL = "Pineapple";
       break;
+    case 3000:
+    case 7000:
+    case 11000:
+    case 15000:
+    case 19000:
+    case 23000:
+      tValueL = "Watermelon";
   }
 
   switch (valueM){
-    case 0:
-    case 3000:
+    case 2000:
     case 6000:
-      //document.getElementById("spinTextMid").value = "Coconut";
+    case 10000:
+    case 14000:
+    case 18000:
+    case 22000:
       tValueM = "Coconut";
       break;
-    case 1000:
     case 4000:
-    case 7000:
-      //document.getElementById("spinTextMid").value = "Banana";
+    case 8000:
+    case 12000:
+    case 16000:
+    case 20000:
+    case 24000:
       tValueM = "Banana";
       break;
-    case 2000:
+    case 1000:
     case 5000:
-    case 8000:
-      //document.getElementById("spinTextMid").value = "Pineapple";
+    case 9000:
+    case 13000:
+    case 17000:
+    case 21000:
       tValueM = "Pineapple";
       break;
+    case 3000:
+    case 7000:
+    case 11000:
+    case 15000:
+    case 19000:
+    case 23000:
+      tValueM = "Watermelon";
   }
 
   switch (valueR){
-    case 0:
-    case 3000:
+    case 2000:
     case 6000:
-      //document.getElementById("spinTextRight").value = "Coconut";
+    case 10000:
+    case 14000:
+    case 18000:
+    case 22000:
       tValueR = "Coconut";
       break;
-    case 1000:
     case 4000:
-    case 7000:
-      //document.getElementById("spinTextRight").value = "Banana";
+    case 8000:
+    case 12000:
+    case 16000:
+    case 20000:
+    case 24000:
       tValueR = "Banana";
       break;
-    case 2000:
+    case 1000:
     case 5000:
-    case 8000:
-      //document.getElementById("spinTextRight").value = "Pineapple";
+    case 9000:
+    case 13000:
+    case 17000:
+    case 21000:
       tValueR = "Pineapple";
       break;
-    default:
-      //document.getElementById("spinTextRight").value = "null";
+    case 3000:
+    case 7000:
+    case 11000:
+    case 15000:
+    case 19000:
+    case 23000:
+      tValueR = "Watermelon";
   }
 
   if (tValueL == tValueM && tValueL == tValueR){
@@ -168,7 +205,7 @@ function spinValues(){
 function pointValue(){
  
   if (pointVal == 0){
-    document.getElementById("youLoseText").value = "You Lose! giving 100 points";
+    document.getElementById("youLoseText").value = "You Lose! giving 100p";
     pointVal = 100;
     document.getElementById("pointVal").value = pointVal;
     document.getElementById("currentBet").value = 5;
@@ -251,3 +288,36 @@ function backgroundMusic() {
 function spinSound(){
   spinSound1.play();
 }
+
+
+
+/* 1 - pineapple
+2 - coconut
+3 - watermelon
+4 - banana
+5 - pineapple
+6 - coconut
+7 - watermelon
+8 - banana
+9 - pineapple
+10 - coconut
+11 - watermelon
+12 - banana
+13 - pineapple
+14 - coconut
+15 - watermelon
+16 - banana
+17 - pineapple
+18 - coconut
+19 - watermelon
+20 - banana
+21 - pineapple
+22 - coconut
+23 - watermelon
+24 - banana
+
+
+pineapple - 3
+coconut - 3
+watermelon - 3
+banana - 3 */
