@@ -24,10 +24,11 @@ function machineSpinLeft(){
 
     anime({
         targets: backIMG,
-        translateY: rAmoundRounded,
-        easing: 'spring(50, 1000, 5000, 0)',
+        translateY: {
+          value: rAmoundRounded,
+          duration: 8500 },
+        easing: 'spring(35, 1000, 5000, 0)',
         direction: 'normal',
-        duration: rDuration,
       });
 }
 
@@ -43,13 +44,13 @@ function machineSpinMiddle(){
     let backIMG = document.getElementsByClassName("midLaneBoxImage");
 
     anime({
-        targets: backIMG,
-        translateY: rAmoundRounded,
-        duration: rDuration,
-        easing: 'spring(50, 1000, 5000, 0)',
-        direction: 'normal',
-        delay: 500
-      });
+      targets: backIMG,
+      translateY: {
+        value: rAmoundRounded,
+        duration: 8500 },
+      easing: 'spring(35, 1000, 5000, 0)',
+      direction: 'normal',
+    });
 }
 
 function machineSpinRight(){
@@ -63,13 +64,13 @@ function machineSpinRight(){
     let backIMG = document.getElementsByClassName("rightLaneBoxImage");
 
     anime({
-        targets: backIMG,
-        translateY: rAmoundRounded,
-        duration: rDuration,
-        easing: 'spring(50, 1000, 5000, 0)',
-        direction: 'normal',
-        delay: 1000
-      });
+      targets: backIMG,
+      translateY: {
+        value: rAmoundRounded,
+        duration: 8500 },
+      easing: 'spring(35, 1000, 5000, 0)',
+      direction: 'normal',
+    });
 }
 
 function spinValues(){
@@ -189,57 +190,15 @@ function spinValues(){
     pointVal = pointVal + (baseBet * 2);
     document.getElementById("youWinText").value = "Match 2! " + baseBet * 2 + " points";
 
-    confetti({
-      particleCount: 100,
-      spread: 70,
-      origin: { y: 0.6, x: 0},
-      angle: 45
-    });
-
-    confetti({
-      particleCount: 100,
-      spread: 70,
-      origin: { y: 0.6, x: 1},
-      angle: -210
-    });
-
   }
   else if (tValueL == tValueR && tValueL != tValueM){
     pointVal = pointVal + (baseBet * 2);
     document.getElementById("youWinText").value = "Match 2! " + baseBet * 2 + " points";
 
-    confetti({
-      particleCount: 100,
-      spread: 70,
-      origin: { y: 0.6, x: 0},
-      angle: 45
-    });
-
-    confetti({
-      particleCount: 100,
-      spread: 70,
-      origin: { y: 0.6, x: 1},
-      angle: -210
-    });
-
   }
   else if (tValueM == tValueR && tValueM != tValueL){
     pointVal = pointVal + (baseBet * 2);
     document.getElementById("youWinText").value = "Match 2! " + baseBet * 2 + " points";
-
-    confetti({
-      particleCount: 100,
-      spread: 70,
-      origin: { y: 0.6, x: 0},
-      angle: 45
-    });
-
-    confetti({
-      particleCount: 100,
-      spread: 70,
-      origin: { y: 0.6, x: 1},
-      angle: -210
-    });
 
   }
   else {
@@ -303,7 +262,7 @@ function spinDisable(){
   document.getElementById("betDownButton").disabled = true;
   document.getElementById("betResetButton").disabled = true;
   document.getElementById("maxBetButton").disabled = true;
-  setTimeout(spinEnable, 8000);
+  setTimeout(spinEnable, 6000);
 }
 
 function spinEnable(){
@@ -315,11 +274,11 @@ function spinEnable(){
 }
 
 function spinValueTimer() {
-  setTimeout(spinValues, 6000);
+  setTimeout(spinValues, 5000);
 }
 
 function pointValueTimer() {
-  setTimeout(pointValue, 6000);
+  setTimeout(pointValue, 5000);
 }
 
 function inputReset() {
