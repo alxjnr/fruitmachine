@@ -17,6 +17,22 @@ body {
     margin: auto;
 }
 
+.containerL {
+    background-color: #0d2c3800; 
+    border: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 1300px;
+    height: 900px;
+    border-radius: 2%;
+    position: relative;
+    left: -20%;
+    top: 50px;  
+    z-index: 1;
+}
+
 .backBox {
     background-color: #2d92b9; 
     border: none;
@@ -27,9 +43,9 @@ body {
     width: 1000px;
     height: 700px;
     border-radius: 2%;
-    position: relative;
-    left: 0%;
-    top: -600px;  
+    position: absolute;
+    left: 15%;
+    top: 150px;  
     z-index: 1;
 }
 
@@ -289,9 +305,9 @@ body {
     width: 1000px;
     height: 100px;
     border-radius: 20px 20px;
-    position: relative;
-    left: 0%;
-    top: 70px;  
+    position: absolute;
+    left: 15%;
+    top: 15px;  
     z-index: 0;
 }
 
@@ -366,9 +382,9 @@ body {
     width: 100px;
     height: 700px;
     border-radius: 20px 20px;
-    position: relative;
-    left: -58%;
-    top: 105px;  
+    position: absolute;
+    left: 4%;
+    top: 150px;  
     z-index: 0;
 }
 
@@ -386,9 +402,9 @@ body {
     width: 130px;
     height: 40px;
     position: relative;
-    left: 36%;
-    top: -70px;  
-    z-index: 3;
+    left: 2%;
+    top: -5px;  
+    z-index: 4;
 }
 
 .pointsLabel {
@@ -404,8 +420,40 @@ body {
     display: inline-block;
     width: 100px;
     height: 20px;
-    position: relative;
-    left: -17%;
-    top: -80px;  
+    position: absolute;
+    left: 15%;
+    top: 5px;  
     z-index: 3;
+}
+
+.betLabelBox {
+    background-color: #ecbd20; 
+    border: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 150px;
+    height: 28px;
+    border-radius: 15px 15px 0px 0px;
+    position: absolute;
+    left: 71.5%;
+    top: 87px;  
+    z-index: 0;
+}
+
+.pointsLabelBox {
+    background-color: #ecbd20; 
+    border: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 150px;
+    height: 28px;
+    border-radius: 15px 15px 0px 0px;
+    position: absolute;
+    left: 40%;
+    top: 87px;  
+    z-index: 0;
 }
