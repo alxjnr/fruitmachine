@@ -183,40 +183,63 @@ function spinValues(){
     pointVal = pointVal + (baseBet * 4);
     document.getElementById("youWinText").value = "Jackpot! - " + baseBet * 4 + " points";
 
-    const jsConfetti = new JSConfetti()
-    jsConfetti.addConfetti({
-      emojis: ['🍌'],
-   })
 
   }
   else if (tValueL == tValueM && tValueL != tValueR){
     pointVal = pointVal + (baseBet * 2);
     document.getElementById("youWinText").value = "Match 2! " + baseBet * 2 + " points";
 
-    const jsConfetti = new JSConfetti()
-    jsConfetti.addConfetti({
-      emojis: ['🍌'],
-   })
+    confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { y: 0.6, x: 0},
+      angle: 45
+    });
+
+    confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { y: 0.6, x: 1},
+      angle: -210
+    });
 
   }
   else if (tValueL == tValueR && tValueL != tValueM){
     pointVal = pointVal + (baseBet * 2);
     document.getElementById("youWinText").value = "Match 2! " + baseBet * 2 + " points";
 
-    const jsConfetti = new JSConfetti()
-    jsConfetti.addConfetti({
-      emojis: ['🍌'],
-   })
+    confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { y: 0.6, x: 0},
+      angle: 45
+    });
+
+    confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { y: 0.6, x: 1},
+      angle: -210
+    });
 
   }
   else if (tValueM == tValueR && tValueM != tValueL){
     pointVal = pointVal + (baseBet * 2);
     document.getElementById("youWinText").value = "Match 2! " + baseBet * 2 + " points";
 
-    const jsConfetti = new JSConfetti()
-    jsConfetti.addConfetti({
-      emojis: ['🍌'],
-   })
+    confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { y: 0.6, x: 0},
+      angle: 45
+    });
+
+    confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { y: 0.6, x: 1},
+      angle: -210
+    });
 
   }
   else {
