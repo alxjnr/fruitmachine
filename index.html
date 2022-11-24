@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <title>
-        FMachine 0.1
+        FMachine 0.2
     </title>
     <head>
         <meta name="viewport" content="width=device-width, initial scale= 1.0">
@@ -12,40 +12,45 @@
     </head>
     <body>
         <div class="wrapper">
-            <div class="topBox">
-                <div class="testText">
-                    <input class="youWinText" type="text" id="youWinText" name="youWinText" value="Ready!">
-                    <input class="pointVal" type="text" id="pointVal" name="pointVal" value="200">
-                    <input class="youLoseText" type="text" id="youLoseText" name="youLoseText">
-                    <input class="currentBet" type="text" id="currentBet" name="currentBet" value="5">
-                    
-                </div>
-                
-            </div>
-            <div class="rightBox">
-                <button class="spinButton" id="spinButton" onclick="machineSpinLeft();machineSpinMiddle();machineSpinRight();spinValueTimer();pointValueTimer();spinDisable();basePointValue();inputReset();backgroundMusic();spinSound();"></button>
-                <button class="betUpButton" id="betUpButton" onclick="betUp();"></button>
-                <button class="betDownButton" id="betDownButton" onclick="betDown();"></button>
-                <button class="betResetButton" id="betResetButton" onclick="betReset();"></button>
-                <button class="maxBetButton" id="maxBetButton" onclick="maxBet();"></button>
-            </div>
-            <div class="backBox">
-                <div class="leftLaneBox">
-                    <div class="leftLaneBoxImage">
+            <div class="containerL">
+                <div class="backBox">
+                    <div class="leftLaneBox">
+                        <div class="leftLaneBoxImage">
+                        </div>
+                    </div>
+                    <div class="midLaneBox">
+                        <div class="midLaneBoxImage">
+                        </div>
+                    </div>
+                    <div class="rightLaneBox">
+                        <div class="rightLaneBoxImage">                        
+                        </div>
                     </div>
                 </div>
-                <div class="betAmountLabel">
+                <div class="topBox">
+                    <div class="testText">
+                        <input class="youWinText" type="text" id="youWinText" name="youWinText" value="Ready!">
+                        <input class="pointVal" type="text" id="pointVal" name="pointVal" value="200">
+                        <input class="youLoseText" type="text" id="youLoseText" name="youLoseText">
+                        <input class="currentBet" type="text" id="currentBet" name="currentBet" value="5">
+                        
+                    </div>   
                 </div>
-                <div class="pointsLabel">
+                <div class="rightBox">
+                    <button class="spinButton" id="spinButton" onclick="machineSpinLeft();machineSpinMiddle();machineSpinRight();spinValueTimer();pointValueTimer();spinDisable();basePointValue();inputReset();backgroundMusic();spinSound();"></button>
+                    <button class="betUpButton" id="betUpButton" onclick="betUp();"></button>
+                    <button class="betDownButton" id="betDownButton" onclick="betDown();"></button>
+                    <button class="betResetButton" id="betResetButton" onclick="betReset();"></button>
+                    <button class="maxBetButton" id="maxBetButton" onclick="maxBet();"></button>
                 </div>
-                <div class="midLaneBox">
-                    <div class="midLaneBoxImage">
+                <div class="betLabelBox">
+                    <div class="betAmountLabel">
                     </div>
                 </div>
-                <div class="rightLaneBox">
-                    <div class="rightLaneBoxImage">                        
+                <div class="pointsLabelBox">
+                    <div class="pointsLabel">
                     </div>
-                </div>
+                </div>            
             </div>
         </div>
     </body>
