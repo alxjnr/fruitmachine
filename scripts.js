@@ -10,8 +10,6 @@ let pointVal = 200;
 
 let baseBet = 5;
 
-let spinSound1 = new Audio("music/test2.mp3");
-
 function machineSpinLeft(){
 
     let rAmount = Math.floor(Math.random() * (24000 - 1000) + 1000);   // may cause issues, 0 no longer a valid case making "Coconut" less likely to appear
@@ -50,6 +48,7 @@ function machineSpinMiddle(){
         duration: 8500 },
       easing: 'spring(35, 1000, 5000, 0)',
       direction: 'normal',
+      delay: 200,
     });
 }
 
@@ -70,6 +69,7 @@ function machineSpinRight(){
         duration: 8500 },
       easing: 'spring(35, 1000, 5000, 0)',
       direction: 'normal',
+      delay: 500,
     });
 }
 
@@ -184,21 +184,37 @@ function spinValues(){
     pointVal = pointVal + (baseBet * 4);
     document.getElementById("youWinText").value = "Jackpot! - " + baseBet * 4 + " points";
 
+    let jackpotSound = document.getElementById("jackpotSound");
+    jackpotSound.play();
+    jackpotSound.volume = 0.8;
+
 
   }
   else if (tValueL == tValueM && tValueL != tValueR){
     pointVal = pointVal + (baseBet * 2);
     document.getElementById("youWinText").value = "Match 2! " + baseBet * 2 + " points";
 
+    let matchSound = document.getElementById("matchSound");
+    matchSound.play();
+    matchSound.volume = 1;
+
   }
   else if (tValueL == tValueR && tValueL != tValueM){
     pointVal = pointVal + (baseBet * 2);
     document.getElementById("youWinText").value = "Match 2! " + baseBet * 2 + " points";
 
+    let matchSound = document.getElementById("matchSound");
+    matchSound.play();
+    matchSound.volume = 1;
+
   }
   else if (tValueM == tValueR && tValueM != tValueL){
     pointVal = pointVal + (baseBet * 2);
     document.getElementById("youWinText").value = "Match 2! " + baseBet * 2 + " points";
+
+    let matchSound = document.getElementById("matchSound");
+    matchSound.play();
+    matchSound.volume = 1;
 
   }
   else {
@@ -215,6 +231,10 @@ function pointValue(){
     pointVal = 100;
     document.getElementById("pointVal").value = pointVal;
     document.getElementById("currentBet").value = 5;
+
+    let loseSound = document.getElementById("loseSound");
+    loseSound.play();
+    loseSound.volume = 0.7;
   }
   else {
     document.getElementById("youLoseText").value = " ";
@@ -249,6 +269,9 @@ function betDown(){
 function maxBet(){
   baseBet = pointVal;
   document.getElementById("currentBet").value = baseBet;
+  let maxBetSound = document.getElementById("generalButtonClick");
+  maxBetSound.play();
+  maxBetSound.volume = 0.7;
 }
 
 function betReset(){
@@ -286,13 +309,28 @@ function inputReset() {
 }
 
 function backgroundMusic() {
-  let myAudio = document.querySelector('#audio')
+  let myAudio = document.querySelector('#audio');
   myAudio.play()
-  myAudio.volume = 0.5;
+  myAudio.volume = 0.4;
 }
 
 function spinSound(){
-  spinSound1.play();
+  let spinSound = document.getElementById('spin');
+  spinSound.play();
+  spinSound.volume = 0.5;
+
+}
+
+function spinButtonClick(){
+  let spinButtonClick = document.getElementById('spinButtonClick');
+  spinButtonClick.play();
+  spinButtonClick.volume = 0.7;
+}
+
+function generalButtonClick(){
+  let generalButtonClick = document.getElementById('generalButtonClick');
+  generalButtonClick.play();
+  generalButtonClick.volume = 0.7;
 }
 
 /* 1 - pineapple
