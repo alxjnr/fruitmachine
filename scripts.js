@@ -182,48 +182,42 @@ function spinValues(){
   if (tValueL == tValueM && tValueL == tValueR){
     pointVal = pointVal + (baseBet * 4);
     document.getElementById("youWinText").value = "Jackpot! - " + baseBet * 4 + " points";
+
+    const jsConfetti = new JSConfetti()
+    jsConfetti.addConfetti({
+      emojis: ['🍌'],
+   })
+
   }
   else if (tValueL == tValueM && tValueL != tValueR){
     pointVal = pointVal + (baseBet * 2);
     document.getElementById("youWinText").value = "Match 2! " + baseBet * 2 + " points";
-    confetti({
-      particleCount: 100,
-      spread: 70,
-      origin: { y: 0.6, x: 0.745 }
-    });
-    confetti({
-      particleCount: 100,
-      spread: 70,
-      origin: { y: 0.6, x: 0.3 }
-    });
+
+    const jsConfetti = new JSConfetti()
+    jsConfetti.addConfetti({
+      emojis: ['🍌'],
+   })
+
   }
   else if (tValueL == tValueR && tValueL != tValueM){
     pointVal = pointVal + (baseBet * 2);
     document.getElementById("youWinText").value = "Match 2! " + baseBet * 2 + " points";
-    confetti({
-      particleCount: 100,
-      spread: 70,
-      origin: { y: 0.6, x: 0.745 }
-    });
-    confetti({
-      particleCount: 100,
-      spread: 70,
-      origin: { y: 0.6, x: 0.3 }
-    });
+
+    const jsConfetti = new JSConfetti()
+    jsConfetti.addConfetti({
+      emojis: ['🍌'],
+   })
+
   }
   else if (tValueM == tValueR && tValueM != tValueL){
     pointVal = pointVal + (baseBet * 2);
     document.getElementById("youWinText").value = "Match 2! " + baseBet * 2 + " points";
-    confetti({
-      particleCount: 100,
-      spread: 70,
-      origin: { y: 0.6, x: 0.745 }
-    });
-    confetti({
-      particleCount: 100,
-      spread: 70,
-      origin: { y: 0.6, x: 0.3 }
-    });
+
+    const jsConfetti = new JSConfetti()
+    jsConfetti.addConfetti({
+      emojis: ['🍌'],
+   })
+
   }
   else {
     document.getElementById("youWinText").value = " ";
@@ -318,8 +312,6 @@ function backgroundMusic() {
 function spinSound(){
   spinSound1.play();
 }
-
-
 
 /* 1 - pineapple
 2 - coconut
