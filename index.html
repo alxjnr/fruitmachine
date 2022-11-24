@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        FMachine 0.1
+    </title>
+    <head>
+        <meta name="viewport" content="width=device-width, initial scale= 1.0">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <audio id="audio" autoplay loop src="music/fruitDream.mp3"></audio>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="topBox">
+                <div class="testText">
+                    <input class="youWinText" type="text" id="youWinText" name="youWinText" value="Ready!">
+                    <input class="pointVal" type="text" id="pointVal" name="pointVal" value="200">
+                    <input class="youLoseText" type="text" id="youLoseText" name="youLoseText">
+                    <input class="currentBet" type="text" id="currentBet" name="currentBet" value="5">
+                    
+                </div>
+                
+            </div>
+            <div class="rightBox">
+                <button class="spinButton" id="spinButton" onclick="machineSpinLeft();machineSpinMiddle();machineSpinRight();spinValueTimer();pointValueTimer();spinDisable();basePointValue();inputReset();backgroundMusic();spinSound();"></button>
+                <button class="betUpButton" id="betUpButton" onclick="betUp();"></button>
+                <button class="betDownButton" id="betDownButton" onclick="betDown();"></button>
+                <button class="betResetButton" id="betResetButton" onclick="betReset();"></button>
+                <button class="maxBetButton" id="maxBetButton" onclick="maxBet();"></button>
+            </div>
+            <div class="backBox">
+                <div class="leftLaneBox">
+                    <div class="leftLaneBoxImage">
+                    </div>
+                </div>
+                <div class="betAmountLabel">
+                </div>
+                <div class="pointsLabel">
+                </div>
+                <div class="midLaneBox">
+                    <div class="midLaneBoxImage">
+                    </div>
+                </div>
+                <div class="rightLaneBox">
+                    <div class="rightLaneBoxImage">                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
