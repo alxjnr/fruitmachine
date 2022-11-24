@@ -30,8 +30,6 @@ function machineSpinLeft(){
         easing: 'spring(35, 1000, 5000, 0)',
         direction: 'normal',
       });
-
-      document.getElementById("betAmountTest").textContent = 'hello';
 }
 
 function machineSpinMiddle(){
