@@ -2,10 +2,11 @@
     margin-right: auto;
     margin-left: auto;
     
-    max-width: 960px;
+    max-width: 1500px;
+    min-width: 200px;
 
-    padding-right: 25%;
-    padding-left: 25%;
+    padding-right: 0;
+    padding-left: 0;
 }
 
 body {
@@ -14,7 +15,8 @@ body {
 
     
     text-align: center;
-    margin: auto;
+    margin: 0;
+    padding: 0;
 }
 
 .containerL {
@@ -24,11 +26,11 @@ body {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    width: 1300px;
+    width: 1200px;
     height: 900px;
     border-radius: 2%;
     position: relative;
-    left: -25%;
+    left: 0%;
     top: 50px;  
     z-index: 0;
 }
@@ -44,7 +46,7 @@ body {
     height: 700px;
     border-radius: 2%;
     position: absolute;
-    left: 15%;
+    left: 13%;
     top: 150px;  
     z-index: 1;
 }
@@ -142,7 +144,7 @@ body {
     left: 67%;
     top: 50px;  
     z-index: 0;
-    overflow: hidden;
+   overflow: hidden; 
 }
 
 .rightLaneBoxImage {
@@ -306,8 +308,8 @@ body {
     height: 100px;
     border-radius: 20px 20px;
     position: absolute;
-    left: 15%;
-    top: 15px;  
+    left: 13%;
+    top: 25px;  
     z-index: 0;
 }
 
@@ -382,12 +384,11 @@ body {
     color: rgb(0, 0, 0);
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     width: 100px;
     height: 700px;
     border-radius: 20px 20px;
     position: absolute;
-    left: 4%;
+    left: 2%;
     top: 150px;  
     z-index: 0;
 }
@@ -426,7 +427,7 @@ body {
     height: 20px;
     position: absolute;
     left: 15%;
-    top: 5px;  
+    top: 6px;  
     z-index: 3;
 }
 
@@ -441,8 +442,8 @@ body {
     height: 28px;
     border-radius: 15px 15px 0px 0px;
     position: absolute;
-    left: 71.5%;
-    top: 87px;  
+    left: 74%;
+    top: 97px;  
     z-index: 0;
 }
 
@@ -458,6 +459,6 @@ body {
     border-radius: 15px 15px 0px 0px;
     position: absolute;
     left: 40%;
-    top: 87px;  
+    top: 97px;  
     z-index: 0;
 }
