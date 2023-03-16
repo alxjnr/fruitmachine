@@ -17,6 +17,6 @@ This project uses the animation library anime.js to simulate a wheel 'spinning' 
 <br>
 If this value is 5, the wheel will spin correctly, but if the next value is lower than 5, the wheel will begin to spin backwards. Fortunately, it's likely that the spin after that lower number will then be higher and the cycle repeats.
 
-#Sources
+## Sources
 
 This web app uses music created by me.
